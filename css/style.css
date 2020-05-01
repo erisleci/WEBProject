@@ -95,3 +95,80 @@ main .text {
     background-color: #FA7D19;
     border: none;
 }
+
+.titulli_lajmeve{
+    margin-top: 40px;
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #34393f;
+    font-weight: 100;
+}
+
+.artikujt{
+    margin-top: 15px;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.lajmi{
+    background-color: white;
+    max-height: 400px;
+    width: 20%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.lajmi_hint{
+    background-color: rgb(119, 112, 112)150, 139, 139);
+    width: 20%;
+}
+
+.lajmi img{
+    align-items: flex-start;
+    height: 200px;
+    width: 100%;
+}
+
+.lajmi h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.lajmi h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.lajmi_hint img{
+    align-items: flex-start;
+    height: 200px;
+    width: 100%;
+}
+
+.lajmi_hint h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.lajmi_hint h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+footer{
+    padding: 30px;
+    background-color: #34393F;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer li{
+    list-style-type: none;
+    margin-top: 5px;
+    margin-left: 50px;
+}
