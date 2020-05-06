@@ -167,16 +167,110 @@ main .text {
 
 
 footer{
-    padding: 30px;
-    background-color: #34393F;
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.TopFooter{
+    padding: 10px;
+    background-color: #34393F;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+
+.CentralFooter{
+    background-color: #25292e;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
 footer li{
     list-style-type: none;
     margin-top: 5px;
     margin-left: 50px;
+}
+.FooterIcon{
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+
+}
+.partners{
+    height: 50px;
+    background-color: #34393F;
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+  
+}
+.PartnerIcons{
+    display: flex;
+    flex-direction: row;
+
+}
+.FooterIcon{
+    height:40px ;
+    width:40px ;
+}
+
+
+
+.footer1{
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: cover;
+    padding-top: 10px;
+    padding-left: 10%;
+}
+
+.first{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+}
+.logof{
+  
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.footer1 li{
+    list-style-type: none;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.second {
+    padding-top: 50px;
+}
+
+.third{
+    padding-top: 50px;
+}
+
+.fourth{
+
+}
+
+.TitujtFooter{
+    color:#FA7D19;
+    padding-top: 8px;
 }
