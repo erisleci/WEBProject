@@ -165,112 +165,93 @@ main .text {
 }
 
 
-
-footer{
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+footer {
     width: 100%;
-}
-
-.TopFooter{
-    padding: 10px;
-    background-color: #34393F;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-.CentralFooter{
-    background-color: #25292e;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-
-footer li{
-    list-style-type: none;
-    margin-top: 5px;
-    margin-left: 50px;
-}
-.FooterIcon{
-    max-height: 40px;
-    max-width: 40px;
-}
-
-.icons{
-    display: flex;
-    flex-direction: row;
-
-}
-.partners{
-    height: 50px;
-    background-color: #34393F;
-    display: flex;
-    flex-direction: row;    
-    justify-content: center;
-    align-items: center;
-  
-}
-.PartnerIcons{
-    display: flex;
-    flex-direction: row;
-
-}
-.FooterIcon{
-    height:40px ;
-    width:40px ;
-}
-
-
-
-.footer1{
+    height: 400px;
     background-color: black;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: cover;
-    padding-top: 10px;
-    padding-left: 10%;
 }
 
-.first{
-    
+.upperFooter {
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    border-bottom: 1px white solid;
+    justify-content: space-around;
+}
+
+.kolonat {
     display: flex;
     flex-direction: column;
-    justify-content:  space-between;
-}
-.logof{
-  
-    margin-top: 0;
-    padding-top: 0;
+    justify-content: center;
+    margin-left: 2%;
+    color: white;
+    font-size: 14px;
 }
 
-.footer1 li{
+.kolonat:first-child {
+    justify-content: space-around;
+}
+
+.kolonat h3 {
+    color: #FA7D19;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+#footerLogo img {
+    width: 120px;
+    height: 120px;
+}
+
+.kolonat li {
     list-style-type: none;
-    margin-top: 5px;
-    margin-left: 50px;
-}
-.second {
-    padding-top: 50px;
+    margin: 5px 0;
 }
 
-.third{
-    padding-top: 50px;
+.lowerFooter {
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.fourth{
-
+.lowerFooter img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
 }
 
-.TitujtFooter{
-    color:#FA7D19;
-    padding-top: 8px;
+.kontakt {
+    display: flex;
 }
+
+.kolonat:last-child * {
+    margin: 7px 0;
+}
+
+#subscribeBox {
+    padding-left: 5px;
+    height: 30px;
+}
+
+::placeholder {
+    color: black;
+}
+
+.kolonat button {
+    height: 25px;
+    width: 80px;
+    color: white;
+    background-color:#FA7D19;
+    border: none;
+    border-radius: 5px;
+}
+
