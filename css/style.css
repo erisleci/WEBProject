@@ -203,6 +203,7 @@ footer {
 
 
 #footerLogo img {
+    margin-top: 40px;
     width: 120px;
     height: 120px;
 }
@@ -253,5 +254,10 @@ footer {
     background-color:#FA7D19;
     border: none;
     border-radius: 5px;
+}
+.backtop {
+    text-align: end  ;
+    margin-top: 90%;
+
 }
 
