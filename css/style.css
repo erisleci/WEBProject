@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family:'Roboto', sans-serif;
 }
 
 
 body {
+   
     background-color: #E8E8E8;
 }
 
@@ -59,6 +61,10 @@ header{
 .HeaderList li{
     display: inline;
  
+}
+
+#showLoginForm:hover {
+    cursor: pointer;
 }
 
 main {
@@ -264,5 +270,144 @@ footer {
     text-align: end  ;
     margin-top: 90%;
 
+}
+
+.loginDisplay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    
+   
+   
+}
+
+.loginArea {
+    display: block;
+    color: white;
+    width: 35%;
+    height: 500px;
+    background-color: black;
+    font-family:'Roboto', sans-serif;
+    border-radius: 10px;
+    
+    
+}
+
+.popUp {
+    transform: translateY(0%);
+}
+
+.loginContent, .registerContent {
+    height: 94%;
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 6%;
+    
+}
+
+.closeButton {
+    float: right;
+    width: 25px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+
+}
+
+.closeButton:hover {
+    cursor: pointer;
+}
+
+.loginForm, .registerForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.loginDisplay input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+
+
+    
+
+.loginDisplay label {
+    font-size: 18px;
+}
+
+.submitArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submitArea a,.loginContent a {
+    color: white;
+}
+
+#loginButton, #registerButton {
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color:#FA7D19;
+    border: none;
+}
+
+.loginContent p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+.registerArea {
+   display: none;
+    color: white;
+    width: 35%;
+    height: 600px;
+    background-color: black;
+    font-family:'Roboto', sans-serif;
+    border-radius: 10px;
+}
+
+.registerForm {
+    height: 85%;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+#registerButton {
+    align-self: center;
+}
+
+#showLogin,#showRegistration {
+    text-decoration: underline;
+}
+
+#showLogin:hover,#showRegistration:hover {
+    cursor: pointer;
+}
+
+.registerContent p {
+    text-align: center;
+    margin-top: 15px;
 }
 
