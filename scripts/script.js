@@ -111,7 +111,7 @@ if(slides.length != 0) {
 
    let emriValidation = /[0-9.,!@#$%^&*()_-]+/;
    
-   
+   let emailRegex = /^[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
    
    butoniRegjistrimit.addEventListener("click", testoRegjistrimin);
 
@@ -145,7 +145,7 @@ if(slides.length != 0) {
             return;
         }
 
-        let emailRegex = /[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}/
+        
         if(!emailRegex.test(imellaRegjistrimit.value)) {
             errorFieldRegister.innerHTML="EMAIL nuk eshte ne formatin e duhur";
             return;
@@ -175,6 +175,29 @@ if(slides.length != 0) {
         errorFieldRegister.innerHTML="SUCCESS!";
     }
    
+
+  
+    const butoniSubscribe = document.getElementById("subscribeButton");
+    const kutiaSubscribe = document.getElementById("subscribeBox");
+
+
+    butoniSubscribe.addEventListener("click", subscribe); 
+       
+    
+       function subscribe() {
+        if(kutiaSubscribe.value == "") {
+            alert("Email nuk mund te jete i zbrazet");
+            return;
+        }   
+        
+        if(!emailRegex.test(kutiaSubscribe.value)) {
+            alert("Email nuk eshte ne formatin e duhur")
+            return;
+           }
+
+           alert("Success!");
+        }
+    
     
 
    
