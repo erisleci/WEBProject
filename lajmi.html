@@ -24,7 +24,7 @@
 
         <div class="headerRight"> 
             <ul class="HeaderList">
-                <li>Log in</li>                    
+                <li id="showLoginForm">Log in</li>                    
             </ul>
         </div>
 
@@ -162,12 +162,64 @@
 
         </div>
         <div class="lowerFooter">
-            <img src="images/facebook-4-48.ico">
-            <img src="images/instagram-4-48.ico">
-            <img src="images/twitter-4-48.ico">
-            <img src="images/google-plus-4-48.ico">
+            <img src="images/facebook-4-48.ico" alt="facebook icon">
+            <img src="images/instagram-4-48.ico" alt="instagram icon">
+            <img src="images/twitter-4-48.ico" alt="twitter icon">
+            <img src="images/google-plus-4-48.ico" alt="google plus icon">
         </div>
     </footer>
+
+    <div class="loginDisplay" id="loginDisplay">
+        <div class="loginArea">
+            <button class="closeButton">X</button>
+             <div class="loginContent">
+                <h2 style="text-align: center;">Login</h2>
+                <div class="errorsDivLogin">
+                    
+                    
+                </div>
+                <form class="loginForm">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Your Email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Your Password">
+                    <div class="submitArea">
+                        <a href="#">Forgot your password?</a>
+                        <button  type="button" id="loginButton">Login</button>
+                    </div>
+                </form>
+                <p>Don't have an account? <span id="showRegistration">Create one</span>.</p>
+
+            </div>
+        </div>
+
+        <div class="registerArea">
+            <button class="closeButton">X</button>
+            <div class="registerContent">
+                <h2 style="text-align: center;">Register</h2>
+                <div class="errorsDivRegister">
+                  
+                    
+                </div>
+                <form class="registerForm">
+                    
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" placeholder="Last Name" id="lastName">
+                    <label for="emailRegister">Email Address:</label>
+                    <input type="text" name="emailAddress" id="registerEmail" placeholder="Email Address">
+                    <label for="lastName">Password:</label>
+                    <input type="password" name="password" id="registerPassword" placeholder="Password">
+                    <label for="lastName">Confirm Password:</label>
+                    <input type="password" placeholder="Confirm Password" id="confirmPassword">
+                    <button type="button" id="registerButton">Register</button>
+                </form>
+                <p>Already have an account? <span id="showLogin">Click here to login</span></p>
+            </div>
+    </div>  
+    <script src="scripts/script.js"></script>
+
 
 
 
