@@ -1,433 +1,436 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-family:'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
-
 
 body {
-   
-    background-color: #E8E8E8;
+  background-color: #e8e8e8;
 }
 
-header{
+header {
   height: 100px;
-    width: 100%;
-    background-color:black;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-
-
-.headerLeft, .headerRight {
-   position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+.headerLeft,
+.headerRight {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
 }
 
-.headerLeft{
-    width: 60%;
-    justify-content: space-around;
+.headerLeft {
+  width: 60%;
+  justify-content: space-around;
 }
 
-.headerRight{
-    width: 40%;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+.headerRight {
+  width: 40%;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
 .headerLeft ul {
-    display: flex;
-    width: 65%;
-    justify-content: space-around;
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
 }
 
-.HeaderList li{
-    display: inline;
- 
+.HeaderList li {
+  display: inline;
 }
-.Faqja2{
-    color: white;
-    text-decoration: none;
+.Faqja2 {
+  color: white;
+  text-decoration: none;
 }
-
 
 #showLoginForm:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+.main {
+  max-height: 500px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
 
-.main{
-    max-height: 500px;
-    width: 100%;
-    position: relative;
-    margin: auto;
-  }
-  
- 
-  .Slides {
-    display: none;
-  }
-
+.Slides {
+  display: none;
+}
 
 main .textBox {
-    position: absolute;
-    width: 30%;
-    left: 10%;
-    top: 30%;
-    height: 40%;
-    background-color: black;
-    opacity: 0.95;
-    bottom: 0;
-    
+  position: absolute;
+  width: 30%;
+  left: 10%;
+  top: 30%;
+  height: 40%;
+  background-color: black;
+  opacity: 0.95;
+  bottom: 0;
 }
 
 main .text {
-    color: white;
-    display: flex;
-    word-wrap: break-word;
-    flex-direction: column;
-    margin-left: 7%;
-    margin-right: 13%;
-    width: 80%;
-    height: 100%;
-    justify-content: space-around;
+  color: white;
+  display: flex;
+  word-wrap: break-word;
+  flex-direction: column;
+  margin-left: 7%;
+  margin-right: 13%;
+  width: 80%;
+  height: 100%;
+  justify-content: space-around;
 }
 
 .text button {
-    font-size: 11px;
-    color: white;
-    width: 70px;
-    height: 30px;
-    background-color: #FA7D19;
-    border: none;
+  font-size: 11px;
+  color: white;
+  width: 70px;
+  height: 30px;
+  background-color: #fa7d19;
+  border: none;
 }
 
-.titulli_lajmeve{
-    margin-top: 40px;
-    margin-left: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #34393f;
-    font-weight: 100;
+.titulli_lajmeve {
+  margin-top: 40px;
+  margin-left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #34393f;
+  font-weight: 100;
 }
 
-.artikujt{  
-    margin-top: 15px;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+.artikujt {
+  margin-top: 15px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .artikujt a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .artikujt a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.lajmi{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    max-height: 400px;
-    width: 20%;
-    margin-left: 4px;
-    margin-right: 4px;
-    overflow: hidden;
+.lajmi {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  width: 20%;
+  margin-left: 4px;
+  margin-right: 4px;
+  overflow: hidden;
 }
 
-.lajmi_hint{
-    
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+.lajmi_hint {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  width: 20%;
+  margin-left: 4px;
+  margin-right: 4px;
+  overflow: hidden;
 }
-
 
 .foto {
-    height: 200px;
-    width: 100%;
-    transition-duration: 1s;
-    
-    position: relative;
+  height: 200px;
+  width: 100%;
+  transition-duration: 1s;
+
+  position: relative;
 }
 
 .foto:hover {
-    transform: scale(1.05);
-    background-size: contain;
-    
-    opacity: 0.85;
+  transform: scale(1.05);
+  background-size: contain;
+
+  opacity: 0.85;
 }
 
-
-
-.artikujt h3, .artikujt h5 {
-    margin-top: 10px;
-    margin-left: 10px;
+.artikujt h3,
+.artikujt h5 {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .artikujt {
+    flex-direction: column;
+  }
+  .lajmi {
+    flex-direction: row;
+    width: 100%;
+    padding-right: 0;
+  }
+  .lajmi_hint {
+    flex-direction: row;
+    width: 100%;
+  }
+  .foto {
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .titulli_lajmeve {
+    padding-left: 30%;
+    padding-bottom: 5%;
+  }
+  .h3 {
+    font-size: small;
+  }
+}
 
 footer {
-    width: 100%;
-    height: 400px;
-    background-color: black;
+  width: 100%;
+  height: 400px;
+  background-color: black;
 }
 
 .upperFooter {
-    position: relative;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-    height: 80%;
-    display: flex;
-    border-bottom: 1px white solid;
-    justify-content: space-around;
+  position: relative;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  border-bottom: 1px white solid;
+  justify-content: space-around;
 }
 
 .kolonat {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 2%;
-    color: white;
-    font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2%;
+  color: white;
+  font-size: 14px;
 }
 
 .kolonat:first-child {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .kolonat h3 {
-    color: #FA7D19;
-    font-size: 16px;
-    margin-bottom: 5px;
+  color: #fa7d19;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
-
 #footerLogo img {
-    margin-top: 40px;
-    width: 120px;
-    height: 120px;
+  margin-top: 40px;
+  width: 120px;
+  height: 120px;
 }
 
 .kolonat li {
-    list-style-type: none;
-    margin: 5px 0;
+  list-style-type: none;
+  margin: 5px 0;
 }
 
 .lowerFooter {
-    position: relative;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lowerFooter img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
 }
 
 .kontakt {
-    display: flex;
+  display: flex;
 }
 
 .kolonat:last-child * {
-    margin: 7px 0;
+  margin: 7px 0;
 }
 
 #subscribeBox {
-    padding-left: 5px;
-    height: 30px;
+  padding-left: 5px;
+  height: 30px;
 }
 
 ::placeholder {
-    color: black;
+  color: black;
 }
 
 .kolonat button {
-    height: 25px;
-    width: 80px;
-    color: white;
-    background-color:#FA7D19;
-    border: none;
-    border-radius: 5px;
+  height: 25px;
+  width: 80px;
+  color: white;
+  background-color: #fa7d19;
+  border: none;
+  border-radius: 5px;
 }
 .backtop {
-    text-align: end  ;
-    margin-top: 90%;
-
+  text-align: end;
+  margin-top: 90%;
 }
 
 .loginDisplay {
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 2;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.85);
-    top: 0;
-    
-   
-   
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 0;
 }
 
 .loginArea {
-    display: block;
-    color: white;
-    width: 35%;
-    height: 500px;
-    background-color: black;
-    font-family:'Roboto', sans-serif;
-    border-radius: 10px;
-    
-    
+  display: block;
+  color: white;
+  width: 35%;
+  height: 500px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
 }
 
-
-.loginContent, .registerContent {
-    height: 94%;
-    width: 90%;
-    margin: 0 5%;
-    margin-top: 6%;
-    
+.loginContent,
+.registerContent {
+  height: 94%;
+  width: 90%;
+  margin: 0 5%;
+  margin-top: 6%;
 }
 
 .closeButton {
-    padding-top: 20px;
-    float: right;
-    width: 25px;
-    color: white;
-    background-color: black;
-    border: none;
-    font-size: 20px;
-
+  padding-top: 20px;
+  float: right;
+  width: 25px;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 20px;
 }
 
 .closeButton:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.loginForm, .registerForm {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-    height: 50%;
+.loginForm,
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  height: 50%;
 }
 
 .loginDisplay input {
-    width: 100%;
-    height: 40px;
-    box-sizing: border-box;
-    padding-left: 10px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 10px;
 }
 
-
-
-    
-
 .loginDisplay label {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .submitArea {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.submitArea a,.loginContent a {
-    color: white;
+.submitArea a,
+.loginContent a {
+  color: white;
 }
 
-#loginButton, #registerButton {
-    width: 250px;
-    height: 40px;
-    color: white;
-    background-color:#FA7D19;
-    border: none;
+#loginButton,
+#registerButton {
+  width: 250px;
+  height: 40px;
+  color: white;
+  background-color: #fa7d19;
+  border: none;
 }
 
 .loginContent p {
-    text-align: center;
-    margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .errorsDivRegister {
-    
-    color: red;
-    height: 5%;
-    width: 100%;
-    font-size: 14px;
+  color: red;
+  height: 5%;
+  width: 100%;
+  font-size: 14px;
 }
 
- .errorsDivLogin {
-    width: 100%;
-    height: 10%;
-    color: red;
-    margin-top: 10px;
-    font-size: 14px;
+.errorsDivLogin {
+  width: 100%;
+  height: 10%;
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
 }
-
-
-
 
 .registerArea {
-   display: none;
-    color: white;
-    width: 35%;
-    height: 660px;
-    background-color: black;
-    font-family:'Roboto', sans-serif;
-    border-radius: 10px;
+  display: none;
+  color: white;
+  width: 35%;
+  height: 660px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
 }
 
 .registerForm {
-    height: 85%;
+  height: 85%;
 }
 
 input::placeholder {
-    color: gray;
+  color: gray;
 }
 
 #registerButton {
-    align-self: center;
+  align-self: center;
 }
 
-#showLogin,#showRegistration {
-    text-decoration: underline;
+#showLogin,
+#showRegistration {
+  text-decoration: underline;
 }
 
-#showLogin:hover,#showRegistration:hover {
-    cursor: pointer;
+#showLogin:hover,
+#showRegistration:hover {
+  cursor: pointer;
 }
 
 .registerContent p {
-    text-align: center;
-    margin-top: 15px;
+  text-align: center;
+  margin-top: 15px;
 }
-
