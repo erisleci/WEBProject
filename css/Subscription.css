@@ -227,6 +227,29 @@ footer {
 .kolonat:first-child {
   justify-content: space-around;
 }
+@media only screen and (max-width: 700px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .headerLeft img {
+    height: 0;
+    width: 0;
+  }
+
+  .headerLeft,
+  .headerRight {
+    font-size: 12px;
+  }
+
+  .headerLeft ul {
+    width: 100%;
+  }
+
+  .headerLeft ul {
+    width: 100%;
+  }
+}
 
 .kolonat h3 {
   color: #fa7d19;
