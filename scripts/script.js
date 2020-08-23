@@ -1,13 +1,16 @@
 let loginDritarja = document.getElementById("loginDisplay");
 let xButton = document.getElementsByClassName("closeButton")[0];
 let xButton1 = document.getElementsByClassName("closeButton")[1];
+console.log(xButton);
 
 function closeLogin() {
     loginDritarja.style.display="none";
 }
 
-xButton.addEventListener("click",closeLogin);
-xButton1.addEventListener("click",closeLogin);
+if(xButton !== undefined &&  xButton1 !== undefined) {
+    xButton.addEventListener("click",closeLogin);
+    xButton1.addEventListener("click",closeLogin);
+}
 
 
 
@@ -24,7 +27,11 @@ function showLoginFormFunction() {
     shfaqeLoginin();
 }
 
-showLoginForm.addEventListener("click",showLoginFormFunction);
+console.log(showLoginForm);
+
+if(showLoginForm !== null) {
+    showLoginForm.addEventListener("click",showLoginFormFunction);
+}
 
 
 
@@ -47,26 +54,14 @@ function shfaqeRegjistrimin() {
     loginHapesira.style.display="none"
 }
 
-showLoginButton.addEventListener("click",shfaqeLoginin);
-showRegistrationButton.addEventListener("click",shfaqeRegjistrimin);
 
-
-let slideIndex = 0;
-let slides = document.getElementsByClassName("Slides");
-if(slides.length != 0) {
-    function showSlides() {
-      let i;
-      
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 4000); // Change image every 2 seconds
-    }
-    showSlides();
+if(showLoginButton !== null && showRegistrationButton !== null) {
+    showLoginButton.addEventListener("click",shfaqeLoginin);
+    showRegistrationButton.addEventListener("click",shfaqeRegjistrimin);
 }
+
+
+
 
     
  
@@ -81,20 +76,21 @@ if(slides.length != 0) {
    let loginPassword = document.getElementById("password");
    let butoniKyqjes = document.getElementById("loginButton");
    let errorFieldLogin = document.querySelector(".errorsDivLogin");
+   if(butoniKyqjes !== null) {
    butoniKyqjes.addEventListener('click', testo);
-
+   };
    function testo() {
         
         if(loginEmail.value == "") {
             errorFieldLogin.innerHTML="Email nuk mund te jete i zbrazet"
-            return;
+            return false;
         }
         if(loginPassword.value == "") {
             errorFieldLogin.innerHTML="Password nuk mund te jete i zbrazet";
-            return;
+            return false;
         }
 
-        errorFieldLogin.innerHTML="SUCCESS!"
+        
    }
 
 
@@ -111,68 +107,69 @@ if(slides.length != 0) {
 
    let emriValidation = /[0-9.,!@#$%^&*()_-]+/;
    
-   let emailRegex = /^[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+   let emailRegex = /^[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
    
-   butoniRegjistrimit.addEventListener("click", testoRegjistrimin);
+   //butoniRegjistrimit.addEventListener("click", testoRegjistrimin);
 
    function testoRegjistrimin() {
         
     //EMRI
         if(emri.value.length < 2) {
             errorFieldRegister.innerHTML="Emri duhet ti permbaje se paku 3 shkronja";
-            return;
+            return false;
         }
    
         if(emriValidation.test(emri.value)) {
             errorFieldRegister.innerHTML="Emri nuk mund te permbaje numra apo simbole";
-            return;
+            return false;
         } 
         
     //MBIEMRI
         if(mbiemri.value.length < 2) {
             errorFieldRegister.innerHTML="Mbiemri duhet ti permbaje se paku 3 shkronja";
-            return;
+            return false;
         }
    
         if(emriValidation.test(mbiemri.value)) {
             errorFieldRegister.innerHTML="Mbiemri nuk mund te permbaje numra apo simbole";
-            return;
+            return false;
         }
      
     //EMAIL ADDRESS
         if(imellaRegjistrimit.value.trim() == "") {
             errorFieldRegister.innerHTML="Email nuk mund te jete i zbrazet";
-            return;
+            return false;
         }
 
         
         if(!emailRegex.test(imellaRegjistrimit.value)) {
             errorFieldRegister.innerHTML="EMAIL nuk eshte ne formatin e duhur";
-            return;
+            return false;
         }
 
      //Password
         if(fjalekalimi.value == "") {
             errorFieldRegister.innerHTML="Password Nuk mund te jete i zbrazet";
-            return;
+            return false;
         }
         if(fjalekalimi.value.length < 6) {
             errorFieldRegister.innerHTML="PASSWORD  Duhet te jete se paku 6 karaktere";
-            return;
+            return false;
         }
-        let passRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,}$/;
+        let passRegex = /^(?=.*[0-9])[a-zA-Z0-9!@#$%^&*]{6,}$/;
 
         if(!fjalekalimi.value.match(passRegex)) {
             errorFieldRegister.innerHTML="Password duhet te permbaje se paku nje shkronje te madhe dhe nje simbol.";
-            return;
+            return false;
         }
 
         if(!(fjalekalimi.value == konfirmoFjalekalimin.value)) {
             errorFieldRegister.innerHTML="Passwordi nuk eshte i njejte"
-            return;
+            return false;
         }
 
-        errorFieldRegister.innerHTML="SUCCESS!";
+        
+        return true;
     }
    
 
@@ -180,8 +177,9 @@ if(slides.length != 0) {
     const butoniSubscribe = document.getElementById("subscribeButton");
     const kutiaSubscribe = document.getElementById("subscribeBox");
 
-
+    /*if(butoniSubscribe !== null) {
     butoniSubscribe.addEventListener("click", subscribe); 
+    }
        
     
        function subscribe() {
@@ -197,6 +195,52 @@ if(slides.length != 0) {
 
            alert("Success!");
         }
+
+        */
+
+
+        /*SLIDER */
+
+const carouselslide = document.querySelector('.carousel-slide');
+const carouselimages = document.querySelectorAll('.carousel-slide img');
+
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+//counter
+let counter = 1;
+const size = carouselimages[0].clientWidth;
+
+carouselslide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+nextBtn.addEventListener('click', () => {
+    if (counter >= carouselimages.length - 1) return;
+    carouselslide.style.transition = "transform 0.4s ease-in-out";
+    counter++;
+    carouselslide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+prevBtn.addEventListener('click', () => {
+    if (counter <= 0) return;
+    carouselslide.style.transition = "transform 0.4s ease-in-out";
+    counter--;
+    carouselslide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+//me u  kthy ne fillim
+carouselslide.addEventListener('transitionend', () => {
+    if (carouselimages[counter].id == "lastClone") {
+        carouselslide.style.transition = "none";
+        counter = carouselimages.length - 2;
+        carouselslide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+
+    if (carouselimages[counter].id == "firstClone") {
+        carouselslide.style.transition = "none";
+        counter = carouselimages.length - counter;
+        carouselslide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+});
     
     
 

@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #E8E8E8;
+}
+
+header{
+  height: 100px;
+    width: 100%;
+    background-color:black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.headerLeft, .headerRight {
+   position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.headerLeft{
+    width: 60%;
+    justify-content: space-around;
+}
+
+.headerRight{
+    width: 40%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.headerLeft ul {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+}
+
+.HeaderList li{
+    display: inline;
+ 
+}
+
+#showLoginForm:hover {
+    cursor: pointer;
+}
+
+
+.About_us_titulli{
+ border-bottom: orange;
+ border-bottom-style: solid;
+ border-bottom-width: cover;
+}
+
+.About_us_titulli2{ 
+    border-bottom: orange;
+    border-bottom-style: solid;
+    border-bottom-width: cover;
+   }
+
+.About_us_titulli h1{
+    font-style: italic; 
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.About_us_titulli2 h1{
+    text-align: right;
+    margin-right: 10px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.About_us_titulli3 h1{
+    font-style: italic; 
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.About_us_titulli3{ 
+    border-bottom: orange;
+    border-bottom-style: solid;
+    border-bottom-width: cover;
+   }
+
+.Teksti{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: medium;
+    text-rendering: geometricPrecision;
+    font-size: large;
+}
+
+.pjesa1{
+    display: flex;
+    flex-direction: row;
+    border-bottom: orange;
+    border-bottom-style: solid;
+    border-bottom-width: cover;
+}
+
+.Teksti:first-letter {
+    font-size: 3em;
+    float: left;
+    margin-top: .15em;
+}
+
+/* main {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url(../images/depositphotos_231853280-stock-photo-wide-view-image-student-programmer.jpg) no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+main .textBox {
+    position: absolute;
+    width: 30%;
+    left: 5%;
+    height: 20%;
+    bottom: 0;
+    color: gray;
+    font-size: x-large;
+}
+*/
+
+.Joini{
+    margin-top: 50px;
+    text-align: center;
+    color: orange;
+}
+
+main{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+}
+
+main :nth-child(2){
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.dyta {
+    display: flex;
+    justify-content: space-around;
+}
+
+.kontenti{
+    margin-top: 40px;
+    height: 300px;
+    width: 25%; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-justify: auto;
+    margin-bottom: 30px;
+}
+
+.kontenti img{
+    margin-bottom: 10px;
+    max-width: 260px;
+    max-height: 167px;
+}
+
+.kontenti h3{
+    color: orange;
+    margin-bottom: 15px;
+}
+
+main h2{
+    text-align: center;
+    color: orange;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main h6{
+    color: orange;
+}
+
+
+.Services{
+    margin-top: 100px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-weight: 100;
+}
+
+#sherbimi{
+    padding-top: 20px;
+    padding-left: 12px;
+}
+
+.artikujt{  
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.artikujt a {
+    color: black;
+    text-decoration: none;
+}
+
+.artikujt a:hover {
+    text-decoration: underline;
+}
+
+.lajmi{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    width: 220px;
+    margin-left: 4px;
+    margin-right: 4px;
+    overflow: hidden;
+}
+
+.lajmi{
+    
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.lajmi h5{
+    padding-top: 7px;
+}
+
+.lajmi h3{
+    padding-top: 5px;
+}
+
+
+.foto {
+    background-size: contain;
+    height: 200px;
+    width: 100%;
+    transition-duration: 1s;
+    
+    position: relative;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+    background-size: contain;
+    
+    opacity: 0.85;
+}
+
+
+
+.artikujt h3, .artikujt h5 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+.upperFooter {
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    border-bottom: 1px white solid;
+    justify-content: space-around;
+}
+
+.kolonat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    color: white;
+    font-size: 14px;
+}
+
+.kolonat:first-child {
+    justify-content: space-around;
+}
+
+.kolonat h3 {
+    color: #FA7D19;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+#footerLogo img {
+    margin-top: 40px;
+    width: 120px;
+    height: 120px;
+}
+
+.kolonat li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.lowerFooter {
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lowerFooter img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.kontakt {
+    display: flex;
+}
+
+.kolonat:last-child * {
+    margin: 7px 0;
+}
+
+#subscribeBox {
+    padding-left: 5px;
+    height: 30px;
+}
+
+::placeholder {
+    color: black;
+}
+
+.kolonat button {
+    height: 25px;
+    width: 80px;
+    color: white;
+    background-color:#FA7D19;
+    border: none;
+    border-radius: 5px;
+}
+.backtop {
+    text-align: end  ;
+    margin-top: 90%;
+
+}
+
+.loginDisplay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    
+   
+   
+}
+
+.loginArea {
+    display: block;
+    color: white;
+    width: 35%;
+    height: 500px;
+    background-color: black;
+    font-family:'Roboto', sans-serif;
+    border-radius: 10px;
+    
+    
+}
+
+
+.loginContent, .registerContent {
+    height: 94%;
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 6%;
+    
+}
+
+.closeButton {
+    padding-top: 20px;
+    float: right;
+    width: 25px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+
+}
+
+.closeButton:hover {
+    cursor: pointer;
+}
+
+.loginForm, .registerForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.loginDisplay input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+
+
+    
+
+.loginDisplay label {
+    font-size: 18px;
+}
+
+.submitArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submitArea a,.loginContent a {
+    color: white;
+}
+
+#loginButton, #registerButton {
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color:#FA7D19;
+    border: none;
+}
+
+.loginContent p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.errorsDivRegister {
+    
+    color: red;
+    height: 5%;
+    width: 100%;
+    font-size: 14px;
+}
+
+ .errorsDivLogin {
+    width: 100%;
+    height: 10%;
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
+
+.registerArea {
+   display: none;
+    color: white;
+    width: 35%;
+    height: 660px;
+    background-color: black;
+    font-family:'Roboto', sans-serif;
+    border-radius: 10px;
+}
+
+.registerForm {
+    height: 85%;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+#registerButton {
+    align-self: center;
+}
+
+#showLogin,#showRegistration {
+    text-decoration: underline;
+}
+
+#showLogin:hover,#showRegistration:hover {
+    cursor: pointer;
+}
+
+.registerContent p {
+    text-align: center;
+    margin-top: 15px;
+}

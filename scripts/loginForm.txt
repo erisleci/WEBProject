@@ -1,0 +1,20 @@
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        String username = "";
+        try{
+            
+            PuntoriRepository pr = new PuntoriRepository();
+            String pass = new String(passwordField.getPassword());
+            if(pass.trim().length() == 0 || usernameField.getText().trim().length() == 0) {
+                JOptionPane.showMessageDialog(this, "Plotesoni te gjitha fushat");
+            }
+            Puntori p = pr.loginByUsernameAndPassword(usernameField.getText(),pass);
+            
+            username = pass;
+            if(p != null) {
+                new MainForm(p.getRoli()).setVisible(true);
+                this.setVisible(false);
+            }
+        }catch(CrudFormException cfe) {
+            JOptionPane.showMessageDialog(this, "Wrong username or/and password!");
+        }
+    }     

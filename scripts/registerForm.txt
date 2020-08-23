@@ -1,0 +1,83 @@
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        String emriReg = "[A-Za-z]{2,20}";
+        String usernameReg = "\\w{2,20}";
+        String passwordReg = "^(?=.*[0-9])[a-zA-Z0-9!@#$%^&*._-]{6,20}$";
+        String emailReg = "[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}";
+        String zipReg = "[0-9]{4,5}";
+        String rrugaReg = "[a-zA-Z\\s0-9]+";
+        String qytetiReg = "[A-Za-z\\s]{3,20}";
+        String kontaktiReg = "[0-9]{8,12}";
+        
+        try {
+        
+        Puntori p = new Puntori();
+        p.setEmri(emriField.getText());
+        if(!matches(emriReg,emriField.getText())) {
+            JOptionPane.showMessageDialog(this, "Emri duhet te permbaje vetem shkronja");
+            return;
+        }
+        p.setMbiemri(mbiemriField.getText());
+        if(!matches(emriReg,mbiemriField.getText())) {
+            JOptionPane.showMessageDialog(this, "Mbiemri duhet te permbaje vetem shkronja");
+            return;
+        }
+        p.setPerdoruesi(usernameField.getText());
+        if(!matches(usernameReg,usernameField.getText())) {
+            JOptionPane.showMessageDialog(this, "Username mund te permbaje vetem numra, shkronja dhe _ dhe duhet te jete se paku 2 karaktere deri 20");
+            return;
+        }
+        p.setEmail(emailField.getText());
+        if(!matches(emailReg,emailField.getText())) {
+            JOptionPane.showMessageDialog(this, "Email-i nuk eshte valid");
+            return;
+        }
+        p.setPasswordi(new String(passwordField.getPassword()));
+        if(!matches(passwordReg,p.getPasswordi())) {
+            JOptionPane.showMessageDialog(this, "Passwordi duhet te kete prej 6-20 karaktere dhe se paku nje numer");
+            return;
+        }
+        DateFormat df = new SimpleDateFormat("dd/MM/yy");
+        Date d = new Date();
+        
+        p.setDataRegjistrimit(d);
+        p.setQyteti(qytetiField.getText());
+        if(!matches(qytetiReg,p.getQyteti())) {
+            JOptionPane.showMessageDialog(this, "Please put a valid city");
+            return;
+        }
+        
+        p.setRruga(rrugaField.getText());
+        if(!matches(qytetiReg,p.getRruga())) {
+            JOptionPane.showMessageDialog(this, "Please put a valid Street name");
+            return;
+        }
+        
+        if(!matches(zipReg,zipField.getText())) {
+            JOptionPane.showMessageDialog(this, "Please put a valid Zip code");
+            return;
+        }
+        p.setZip(Integer.parseInt(zipField.getText()));
+        
+        if(!matches(kontaktiReg,kontaktiField.getText())) {
+            JOptionPane.showMessageDialog(this, "Please put a valid phone number ( pa +)");
+            return;
+        }
+        p.setKontakti(Integer.parseInt(kontaktiField.getText()));
+        
+       
+        p.setRoli((String)roliComboBox.getSelectedItem());
+        r = (Restaurant)RestaurantComboBox.getSelectedItem();
+        p.setRestaurant(r);
+        p.setOrari("N/A");
+        p.setPaga(0.0);
+        pr.create(p);
+       
+        JOptionPane.showMessageDialog(this, "U shtua me sukses");
+        new LoginForm().setVisible(true);
+        this.setVisible(false);
+        }catch (CrudFormException cfe) {
+            JOptionPane.showMessageDialog(this, "Ekziston ne databaze!");
+            cfe.printStackTrace();
+        }
+        
+    }

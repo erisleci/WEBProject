@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #E8E8E8;
+    background-image: url(http://bgfons.com/uploads/newspaper/newspaper_texture2826.jpg);
+}
+
+header{
+  height: 100px;
+    width: 100%;
+    background-color:black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.headerLeft, .headerRight {
+   position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.headerLeft{
+    width: 60%;
+    justify-content: space-around;
+}
+
+.headerRight{
+    width: 40%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.headerLeft ul {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+}
+
+.HeaderList li{
+    display: inline;
+ 
+}
+
+#showLoginForm:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+body{
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    color: #777;
+}
+
+#container{
+    width: 550px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#contact{
+    padding: 25px;
+    display: block; 
+    background: #F9F9F9;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3{
+    padding-bottom: 25px;
+}
+
+
+
+
+fieldset{
+    display: block;
+    border: none;
+    margin: 0 0 10px;
+    width: 100%;
+    padding: 0;
+    width: 300px;
+}
+
+#inputat{
+    width: 459px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    display: inline-block;
+    white-space:normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#mesazhi{
+    max-width: 100%;
+    width: 481px;
+    height: 100px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    display: inline-block;
+    white-space:normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-indent: 9px;
+}
+
+#contact h5{
+    font-size: 1rem;
+    margin: 1 3 3px;
+}
+
+#submiti{
+    cursor: pointer;
+    width: 481px;
+    border: none;
+    background: #FA7D19;
+    color: #FFF;
+    padding-top: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+.upperFooter {
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    border-bottom: 1px white solid;
+    justify-content: space-around;
+}
+
+.kolonat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    color: white;
+    font-size: 14px;
+}
+
+.kolonat:first-child {
+    justify-content: space-around;
+}
+
+.kolonat h3 {
+    color: #FA7D19;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+#footerLogo img {
+    margin-top: 40px;
+    width: 120px;
+    height: 120px;
+}
+
+.kolonat li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.lowerFooter {
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lowerFooter img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.kontakt {
+    display: flex;
+}
+
+.kolonat:last-child * {
+    margin: 7px 0;
+}
+
+#subscribeBox {
+    padding-left: 5px;
+    height: 30px;
+}
+
+::placeholder {
+    color: black;
+}
+
+.kolonat button {
+    height: 25px;
+    width: 80px;
+    color: white;
+    background-color:#FA7D19;
+    border: none;
+    border-radius: 5px;
+}
+.backtop {
+    text-align: end  ;
+    margin-top: 90%;
+
+}
+
+.loginDisplay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    
+   
+   
+}
+
+.loginArea {
+    display: block;
+    color: white;
+    width: 35%;
+    height: 500px;
+    background-color: black;
+    font-family:'Roboto', sans-serif;
+    border-radius: 10px;
+    
+    
+}
+
+
+.loginContent, .registerContent {
+    height: 94%;
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 6%;
+    
+}
+
+.closeButton {
+    padding-top: 20px;
+    float: right;
+    width: 25px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+
+}
+
+.closeButton:hover {
+    cursor: pointer;
+}
+
+.loginForm, .registerForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.loginDisplay input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+
+
+    
+
+.loginDisplay label {
+    font-size: 18px;
+}
+
+.submitArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submitArea a,.loginContent a {
+    color: white;
+}
+
+#loginButton, #registerButton {
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color:#FA7D19;
+    border: none;
+}
+
+.loginContent p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.errorsDivRegister {
+    
+    color: red;
+    height: 5%;
+    width: 100%;
+    font-size: 14px;
+}
+
+ .errorsDivLogin {
+    width: 100%;
+    height: 10%;
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
+
+.registerArea {
+   display: none;
+    color: white;
+    width: 35%;
+    height: 660px;
+    background-color: black;
+    font-family:'Roboto', sans-serif;
+    border-radius: 10px;
+}
+
+.registerForm {
+    height: 85%;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+#registerButton {
+    align-self: center;
+}
+
+#showLogin,#showRegistration {
+    text-decoration: underline;
+}
+
+#showLogin:hover,#showRegistration:hover {
+    cursor: pointer;
+}
+
+.registerContent p {
+    text-align: center;
+    margin-top: 15px;
+}

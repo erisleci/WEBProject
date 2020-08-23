@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #E8E8E8;
+}
+
+header{
+  height: 100px;
+    width: 100%;
+    background-color:black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+
+
+.headerLeft, .headerRight {
+   position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.headerLeft{
+    width: 60%;
+    justify-content: space-around;
+}
+
+.headerRight{
+    width: 40%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .headerRight a:nth-child(2), .headerRight a:last-child {
+    background-color: #fa7d19;
+    margin-left: 20px;
+  }
+
+.headerLeft ul {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+}
+
+.HeaderList li{
+    display: inline;
+ 
+}
+
+main {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+main div {
+    width: 50%;
+}
+
+main div form {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main div form * {
+    padding: 10px 0;
+}
+
+input[type='text'], textarea {
+    padding-top: 2px;
+    padding-left: 10px;
+}
+
+#shtoButton {
+    align-self: center;
+    margin-top: 20px;
+    background-color: #fa7d19;
+    padding: 10px 100px;
+    border: none;
+}
