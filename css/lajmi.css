@@ -142,7 +142,11 @@ header {
     font-size: 12px;
   }
   .headerRight {
+<<<<<<< HEAD
     font-size: 10px;
+=======
+    font-size: 14px;
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
   }
 
   .headerLeft ul {

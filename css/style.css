@@ -22,6 +22,7 @@ header {
   justify-content: space-around;
 }
 
+<<<<<<< HEAD
 header a {
   color: white;
   text-decoration: none;
@@ -33,6 +34,8 @@ header a {
   margin-left: 20px;
 }
 
+=======
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
 .headerLeft,
 .headerRight {
   position: relative;
@@ -212,6 +215,7 @@ header a {
   background-size: contain;
 
   opacity: 0.85;
+<<<<<<< HEAD
 }
 
 .artikujt h3,
@@ -287,6 +291,83 @@ header a {
   }
 }
 
+=======
+}
+
+.artikujt h3,
+.artikujt h5 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .artikujt {
+    flex-direction: column;
+  }
+  .lajmi {
+    flex-direction: row;
+    width: 100%;
+    padding-right: 0;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 0px;
+  }
+  .lajmi_hint {
+    flex-direction: row;
+    width: 100%;
+  }
+  .foto {
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .titulli_lajmeve {
+    padding-left: 30%;
+    padding-bottom: 5%;
+  }
+
+  .foto {
+    background-size: contain !important;
+    background-position: 100% 100%;
+  }
+
+  .headerLeft img {
+    height: 0;
+    width: 0;
+  }
+  .Faqja2 {
+    font-size: 12px;
+  }
+  .headerRight {
+    font-size: 14px;
+  }
+
+  .headerLeft ul {
+    width: 100%;
+  }
+  .carousel-container {
+    max-width: 700px;
+    max-height: 400px;
+  }
+  .carousel-slide {
+    max-width: 700px;
+    max-height: 400px;
+  }
+  .slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  .textBox {
+    font-size: 12px;
+  }
+  #nextBtn {
+    margin-left: 60%;
+  }
+}
+
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
 footer {
   width: 100%;
   height: 400px;

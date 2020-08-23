@@ -32,6 +32,7 @@ header {
   font-size: 17px;
 }
 
+<<<<<<< HEAD
 header a {
   color: white;
   text-decoration: none;
@@ -43,6 +44,8 @@ header a {
   margin-left: 20px;
 }
 
+=======
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
 .headerLeft {
   width: 60%;
   justify-content: space-around;
@@ -69,10 +72,13 @@ header a {
   color: white;
 }
 
+<<<<<<< HEAD
 #showLoginForm:hover {
   cursor: pointer;
 }
 
+=======
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
 body {
   background-color: #e8e8e8;
 }
@@ -142,7 +148,10 @@ main {
   margin: 0;
   line-height: 1.2;
   vertical-align: middle;
+<<<<<<< HEAD
   overflow: hidden;
+=======
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
 }
 
 #subscription_sale {
@@ -244,6 +253,7 @@ footer {
   justify-content: space-around;
 }
 @media only screen and (max-width: 700px) {
+<<<<<<< HEAD
   body {
     overflow-x: hidden;
     
@@ -265,6 +275,13 @@ footer {
   }
   .headerLeft img {
     
+=======
+  * {
+    overflow-x: hidden;
+  }
+
+  .headerLeft img {
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
     height: 0;
     width: 0;
   }
@@ -346,6 +363,7 @@ footer {
   text-align: end;
   margin-top: 90%;
 }
+<<<<<<< HEAD
 
 .loginDisplay {
   display: none;
@@ -498,3 +516,5 @@ input::placeholder {
   text-align: center;
   margin-top: 15px;
 }
+=======
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807

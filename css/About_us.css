@@ -10,8 +10,11 @@ body {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
 header {
   height: 100px;
   width: 100%;
@@ -25,6 +28,7 @@ header {
   justify-content: space-around;
 }
 
+<<<<<<< HEAD
 
 
 header a {
@@ -38,6 +42,13 @@ header a {
     margin-left: 20px;
   }
 
+=======
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
 .headerLeft,
 .headerRight {
   position: relative;
@@ -300,6 +311,7 @@ main h6 {
 }
 
 @media only screen and (max-width: 700px) {
+<<<<<<< HEAD
    
 
 
@@ -307,6 +319,14 @@ main h6 {
     
     flex-direction: column;
     padding-top: 120%;
+=======
+  * {
+    overflow-x: hidden;
+  }
+  .dyta {
+    flex-direction: column;
+    padding-top: 100%;
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
     padding-bottom: 100%;
   }
   .kontenti {
@@ -337,7 +357,11 @@ main h6 {
 
   .headerLeft,
   .headerRight {
+<<<<<<< HEAD
     font-size: 11px;
+=======
+    font-size: 12px;
+>>>>>>> b7bd8a450f5313466eec9bc17efaedf849ca4807
   }
 
   .headerLeft ul {
